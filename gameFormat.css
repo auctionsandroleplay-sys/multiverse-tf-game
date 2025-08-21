@@ -1,0 +1,73 @@
+body {
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* stack vertically */
+}
+
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center everything horizontally */
+  justify-content: center;
+  flex-grow: 1; /* take up available space */
+}
+
+h1 {
+  color: white;
+  margin-top: 40px; /* push it down a bit from very top */
+  margin-bottom: 60px; /* space between text and button */
+}
+
+#transformButton {
+  background-color: #fdfffe;
+  border: black;
+  color: black;
+  padding: 90px 192px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: xxx-large;
+  transition-duration: 0.1s;
+  border-radius: 10%;
+}
+
+#transformButton:hover {
+  background-color: black;
+  color: white;
+  border: white;
+  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 
+              0 17px 50px 0 rgba(255, 255, 255, 0.19);
+}
+
+/*
+Then you can control the layout of everything inside that container with properties like:
+
+justify-content → controls horizontal alignment
+
+flex-start (left)
+
+center (middle)
+
+flex-end (right)
+
+space-between (spread out evenly)
+
+space-around (even with spacing on ends)
+
+align-items → controls vertical alignment
+
+flex-start (top)
+
+center (middle)
+
+flex-end (bottom)
+
+flex-direction → controls flow of items
+
+row (default, left → right)
+
+column (top → bottom)
+*/
